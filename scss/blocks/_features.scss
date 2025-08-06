@@ -1,0 +1,36 @@
+.features {
+  padding: 120px 0 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    align-items: center;
+    column-gap: 168px;
+  }
+
+  &__inner {
+
+    &-text {
+      margin: 0 0 30px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &-list {
+      column-count: 2;
+      column-gap: 44px;
+      margin: 0;
+      padding: 0 0 0 16px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &-item:not(:last-child) {
+      break-inside: avoid;
+      max-width: 370px;
+      margin: 0 0 15px;
+    }
+  }
+}

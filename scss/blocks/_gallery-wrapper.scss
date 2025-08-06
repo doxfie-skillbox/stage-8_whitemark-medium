@@ -2,6 +2,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 0 120px;
+  font-family: $ff-tenor;
+
+  &--flat {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
 
   &__img {
     border-radius: 0 0 600px 600px;
@@ -15,6 +21,11 @@
     border: 1px solid $color-fallow;
     border-bottom: none;
     border-radius: 600px 600px 0 0;
+
+    &--gap {
+      gap: 60px;
+      padding: 100px 0 58px;
+    }
   }
 
   &__icon-emblem {
@@ -35,7 +46,6 @@
 
   &__decor-location {
     margin: 0 0 40px;
-    font-family: $ff-tenor;
     font-weight: 400;
     font-size: 44px;
     line-height: 50px;
@@ -48,10 +58,45 @@
     margin: 0 0 15px;
   }
 
-  &__decor-project {
+  &__decor-address {
     font-family: $ff-roboto;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+  }
+
+  &__fact {
+    font-weight: 400;
+
+    &-inner {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 0 10px;
+    }
+
+    &-value {
+      font-size: 48px;
+      line-height: 48px;
+      color: $color-fallow;
+      text-transform: uppercase;
+    }
+
+    &-unit {
+      margin: auto 0 3px;
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-fallow;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      display: flex;
+      max-width: 192px;
+      font-family: $ff-roboto;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+    }
   }
 }
