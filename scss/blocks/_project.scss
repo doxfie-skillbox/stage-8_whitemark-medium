@@ -1,0 +1,27 @@
+.project {
+  padding: 120px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__slogan {
+    display: flex;
+    flex-direction: column;
+    max-width: 1368px;
+    margin: 0 auto 120px;
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-fallow;
+  }
+
+  &__panorama {
+    width: 100%;
+  }
+}
