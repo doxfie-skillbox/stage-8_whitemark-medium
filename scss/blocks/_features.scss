@@ -27,10 +27,21 @@
       line-height: 26px;
     }
 
-    &-item:not(:last-child) {
+    &-item {
       break-inside: avoid;
       max-width: 370px;
+
+      &::marker {
+        color: $color-fallow;
+      }
+    }
+
+    &-item:not(:last-child) {
       margin: 0 0 15px;
     }
+  }
+
+  &__facts {
+    padding: 100px 0 57px;
   }
 }

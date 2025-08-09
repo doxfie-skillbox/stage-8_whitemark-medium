@@ -1,0 +1,89 @@
+.yard {
+  padding: 120px 0 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 173px;
+    margin: 0 0 120px;
+  }
+
+  &__descritpiton {
+    &-title {
+      margin: 0 0 30px;
+      font-family: $ff-tenor;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: -0.08em;
+      color: $color-fallow;
+      text-transform: uppercase;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 0;
+      padding: 0 0 0 15px;
+      font-family: $ff-roboto;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &-item {
+      letter-spacing: -0.01em;
+
+      &::marker {
+        color: $color-fallow;
+      }
+    }
+  }
+
+  &__fact {
+    &-item {
+      gap: 22px;
+    }
+  }
+
+  &__fact-group {
+    display: grid;
+    grid-template-columns: 1fr 368px 1fr;
+    width: 100%;
+  }
+
+  &__decor-arrow-left,
+  &__decor-arrow-right {
+    display: flex;
+    position: relative;
+  }
+
+  &__decor-arrow-left::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    bottom: 53%;
+    right: 0;
+    border-bottom: 1px solid $color-fallow;
+  }
+
+  &__decor-arrow-right::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    bottom: 53%;
+    border-bottom: 1px solid $color-fallow;
+  }
+
+  &__icon-arrow-left,
+  &__icon-arrow-right {
+    position: absolute;
+    bottom: 53%;
+    transform: translateY(50%);
+  }
+
+  &__icon-arrow-right {
+    right: 0;
+  }
+}
