@@ -38,12 +38,55 @@
     }
   }
 
-
   &__text {
     max-width: 192px;
     font-family: $ff-roboto;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: 1fr 368px 1fr;
+    width: 100%;
+  }
+
+  &__arrow-left,
+  &__arrow-right {
+    display: flex;
+    position: relative;
+  }
+
+  &__arrow-left::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    bottom: 53%;
+    right: 0;
+    border-bottom: 1px solid $color-fallow;
+  }
+
+  &__arrow-right::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    bottom: 53%;
+    border-bottom: 1px solid $color-fallow;
+  }
+
+  &__icon-arrow-left,
+  &__icon-arrow-right {
+    position: absolute;
+    bottom: 53%;
+    transform: translateY(50%);
+  }
+
+  &__icon-arrow-right {
+    right: 0;
+  }
+
+  &--gap-xl {
+    gap: 22px;
   }
 }

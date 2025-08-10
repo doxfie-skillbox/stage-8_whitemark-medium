@@ -4,7 +4,32 @@
   margin: 0 0 120px;
   font-family: $ff-tenor;
 
+  &__item {
+    margin: 0;
+  }
+
   &__img {
     border-radius: 0 0 600px 600px;
+
+    &--reverse {
+      border-radius: 600px 600px 0 0;
+    }
+  }
+
+  &__description {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.08em;
+    color: $color-fallow;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &--architecture {
+    gap: 84px;
   }
 }
