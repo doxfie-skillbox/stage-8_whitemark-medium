@@ -629,18 +629,16 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 1368px;
-  margin: 0 auto 120px;
+  margin: 0 auto;
+  padding: 120px 0 0;
   text-align: center;
-}
-.project__panorama {
-  width: 100%;
 }
 
 .facts {
-  padding: 91px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid #c49a6c;
   border-bottom: none;
   border-radius: 600px 600px 0 0;
@@ -733,6 +731,17 @@ a {
   line-height: 26px;
   text-align: center;
 }
+.fact-item__title {
+  max-width: 260px;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c49a6c;
+}
 .fact-item__group {
   display: grid;
   grid-template-columns: 1fr 368px 1fr;
@@ -767,6 +776,10 @@ a {
 }
 .fact-item--gap-xl {
   gap: 22px;
+}
+.fact-item--floorplans {
+  margin: auto 0;
+  gap: 40px;
 }
 
 .features {
@@ -857,10 +870,32 @@ a {
   grid-column: 3;
 }
 
+.floorplans {
+  padding: 120px 0 0;
+}
+.floorplans__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 800px;
+  align-items: center;
+  gap: 85px;
+}
+.floorplans__title {
+  margin: 0 0 30px;
+}
+.floorplans__text {
+  margin: 0 0 40px;
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.floorplans__btn {
+  width: 220px;
+}
+
 .gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 0 120px;
   font-family: "Tenor Sans", "Arial", sans-serif;
 }
 .gallery-wrapper__item {
@@ -886,6 +921,10 @@ a {
 }
 .gallery-wrapper--architecture {
   gap: 84px;
+}
+.gallery-wrapper--floorplans {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
 }
 
 .socials {
@@ -916,9 +955,15 @@ a {
   color: #D6D2C4;
 }
 
+.panorama {
+  width: 100%;
+  padding: 120px 0 0;
+}
+
 .footer {
   background-color: #1d252d;
   padding: 60px 0 38px;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
 }
 @media (max-width: 1023px) {
   .footer {
@@ -1098,4 +1143,16 @@ a {
     text-align: center;
     max-width: unset;
   }
+}
+
+.btn {
+  padding: 17px;
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #c49a6c;
+  background-color: unset;
+  border: 1px solid #C49A6C;
+  border-radius: 0 40px 0 40px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.floorplans {
+  padding: 120px 0 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 800px;
+    align-items: center;
+    gap: 85px;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+  }
+
+  &__text {
+    margin: 0 0 40px;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__btn {
+    width: 220px;
+  }
+}

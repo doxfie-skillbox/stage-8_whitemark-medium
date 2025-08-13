@@ -1,7 +1,6 @@
 .gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 0 120px;
   font-family: $ff-tenor;
 
   &__item {
@@ -31,5 +30,10 @@
 
   &--architecture {
     gap: 84px;
+  }
+
+  &--floorplans {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
   }
 }

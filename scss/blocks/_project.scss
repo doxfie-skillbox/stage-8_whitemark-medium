@@ -10,11 +10,8 @@
     display: flex;
     flex-direction: column;
     max-width: 1368px;
-    margin: 0 auto 120px;
+    margin: 0 auto;
+    padding: 120px 0 0;
     text-align: center;
-  }
-
-  &__panorama {
-    width: 100%;
   }
 }
