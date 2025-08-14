@@ -8,12 +8,23 @@
   border-radius: 600px 600px 0 0;
   font-family: $ff-tenor;
 
-  &--padding-xl{
+  &--padding-xl {
     padding: 100px 0 57px;
+
+    @include vp-1023 {
+      padding: 80px 0 0;
+      border: none;
+    }
   }
 
   &__icon-emblem {
     margin: 0 0 30px;
+
+    @include vp-1023 {
+      width: 70px;
+      height: 94px;
+      margin: 0 0 20px;
+    }
   }
 
   &__title {
@@ -26,6 +37,12 @@
     letter-spacing: 0.2em;
     color: $color-fallow;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 0 5px;
+    }
   }
 
   &__location-name {
@@ -36,10 +53,22 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: -0.08em;
+
+    @include vp-1023 {
+      font-size: 28px;
+      line-height: 32px;
+      margin: 0 0 20px;
+    }
   }
 
   &__location-icon {
     margin: 0 0 15px;
+
+    @include vp-1023 {
+      width: 20px;
+      height: 20px;
+      margin: 0 0 10px;
+    }
   }
 
   &__address {
@@ -47,6 +76,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__list {
@@ -56,6 +90,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-weight: 400
+    font-weight: 400;
+
+    @include vp-1023 {
+      max-width: 720px;
+      flex-direction: row;
+      gap: 40px;
+    }
   }
 }

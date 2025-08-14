@@ -8,4 +8,11 @@
   background-color: unset;
   border: 1px solid #C49A6C;
   border-radius: 0 40px 0 40px;
+
+  @include vp-1023 {
+    margin: 0 auto;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

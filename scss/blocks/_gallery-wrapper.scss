@@ -9,6 +9,7 @@
 
   &__img {
     border-radius: 0 0 600px 600px;
+    flex-grow: 0;
 
     &--reverse {
       border-radius: 600px 600px 0 0;
@@ -26,14 +27,44 @@
     color: $color-fallow;
     text-transform: uppercase;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__picture {
+    &--hidden {
+      @include vp-1023 {
+        display: none;
+      }
+    }
+  }
+
+  &--project {
+    @include vp-1023 {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 532px;
+      margin: 0 auto;
+    }
   }
 
   &--architecture {
     gap: 84px;
+
+    @include vp-1023 {
+      gap: 19px;
+    }
   }
 
   &--floorplans {
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
+
+    @include vp-1023 {
+      max-width: 460px;
+      margin: 0 auto;
+    }
   }
 }

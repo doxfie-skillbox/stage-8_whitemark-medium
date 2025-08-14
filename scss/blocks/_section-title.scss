@@ -6,4 +6,9 @@
   letter-spacing: -0.08em;
   color: $color-fallow;
   text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }

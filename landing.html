@@ -42,6 +42,7 @@
     <section class="hero">
       <h1 class="hero__title">Элитный клубный город-парк в&nbsp;москве</h1>
       <picture>
+        <source media="(max-width: 1024px)" srcset="images/img-hero-tablet.jpg 1x, images/img-hero-tablet@2x.jpg 2x">
         <img class="hero__bg-img" src="images/img-hero-desktop.jpg" srcset="images/img-hero-desktop@2x.jpg 2x" width="1728" height="740" alt="Вид на Фрунзенскую набережную в Москве">
       </picture>
     </section>
@@ -49,8 +50,9 @@
       <div class="container">
         <div class="project__wrapper">
           <h2 class="visually-hidden">Фрунзенская набережная&nbsp;&mdash; элитный клубный город-парк в&nbsp;Москве</h2>
-          <div class="gallery-wrapper">
+          <div class="gallery-wrapper gallery-wrapper--project">
             <picture class="gallery-wrapper__picture">
+              <source media="(max-width: 1024px)" srcset="images/residential-entrance-tablet.jpg 1x, images/residential-entrance-tablet@2x.jpg 2x">
               <img class="gallery-wrapper__img" src="images/residential-entrance-desktop.jpg" srcset="images/residential-entrance-desktop@2x.jpg 2x" width="456" height="600" alt="Входная группа жилого комплекса">
             </picture>
             <div class="facts">
@@ -64,8 +66,8 @@
               </svg>
               <span class="facts__address">Фрунзенская набережная, 30</span>
             </div>
-            <picture class="gallery-wrapper__picture">
-              <img class="gallery-wrapper__img" src="images/modern-facade-desktop.jpg" srcset="images/modern-facade-desktop@2x.jpg 2x" width="456" height="600" alt="Современный фасад жилого комплекса">
+            <picture class="gallery-wrapper__picture gallery-wrapper__picture--hidden">
+              <img class="gallery-wrapper__img" src="images/modern-facade-height600-desktop.jpg" srcset="images/modern-facade-height600-desktop@2x.jpg 2x" width="456" height="600" alt="Современный фасад жилого комплекса">
             </picture>
           </div>
           <p class="project__slogan section-title">
@@ -76,6 +78,7 @@
         </div>
       </div>
       <picture>
+        <source media="(max-width: 1024px)" srcset="images/frunzenskaya-riverwalk-night-tablet.jpg 1x, images/frunzenskaya-riverwalk-night-tablet@2x.jpg 2x">
         <img class="project__panorama panorama" src="images/frunzenskaya-riverwalk-night-desktop.jpg" srcset="images/frunzenskaya-riverwalk-night-desktop@2x.jpg 2x" width="1728" height="740" alt="Вечерний вид на Фрунзенскую набережную и теплоход">
       </picture>
     </section>
@@ -107,6 +110,9 @@
                 <span class="fact-item__text">Двор-парк</span>
               </li>
               <li class="fact-item">
+                <svg class="fact-item__icon" width="40" height="40" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-waves"></use>
+                </svg>
                 <div class="fact-item__wrapper">
                   <span class="fact-item__value">25</span>
                   <span class="fact-item__unit">м</span>
@@ -119,11 +125,14 @@
                   <span class="fact-item__unit">м&sup2;</span>
                 </div>
                 <span class="fact-item__text">Развивающих детских пространств</span>
+                <svg class="fact-item__icon fact-item__icon-playground" width="40" height="40" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-playground"></use>
+                </svg>
               </li>
               <li class="fact-item">
                 <div class="fact-item__wrapper">
                   <span class="fact-item__value">150</span>
-                  <span class="fact-item__unit">+</span>
+                  <span class="fact-item__unit fact-item__unit--center">+</span>
                 </div>
                 <span class="fact-item__text">Вариантов квартир</span>
               </li>
@@ -136,7 +145,10 @@
       <h2 class="visually-hidden">Инфраструктура и&nbsp;благоустройство двора-парка</h2>
       <div class="container">
         <div class="yard__wrapper">
-          <img class="yard__img" src="images/courtyard-top-view-desktop.jpg" srcset="images/courtyard-top-view-desktop@2x.jpg 2x" width="700" height="700" alt="Вид на двор-парк с озеленением, маршрутами и зонами отдыха">
+          <picture>
+            <source media="(max-width: 1024px)" srcset="images/courtyard-top-view-tablet.jpg 1x, images/courtyard-top-view-tablet@2x.jpg 2x">
+            <img class="yard__img" src="images/courtyard-top-view-desktop.jpg" srcset="images/courtyard-top-view-desktop@2x.jpg 2x" width="700" height="700" alt="Вид на двор-парк с озеленением, маршрутами и зонами отдыха">
+          </picture>
           <div class="yard__wrapper-description">
             <h2 class="yard__title section-title">Самый большой в&nbsp;элитном сегменте двор-парк 3,1&nbsp;га</h2>
             <ul class="yard__descritpiton-list">
@@ -155,7 +167,7 @@
                 <use xlink:href="images/sprite.svg#icon-arrow-left-desktop"></use>
               </svg>
             </div>
-            <div class="fact-item__wrapper yard__fact-item-wrapper">
+            <div class="fact-item__wrapper">
               <span class="fact-item__value fact-item__value--big">3,1</span>
               <span class="fact-item__unit fact-item__unit--big">га</span>
             </div>
@@ -178,18 +190,21 @@
         <div class="gallery-wrapper gallery-wrapper--architecture">
           <figure class="gallery-wrapper__item">
             <picture class="gallery-wrapper__pictures">
+              <source media="(max-width: 1024px)" srcset="images/towers-tablet.jpg 1x, images/towers-tablet@2x.jpg 2x">
               <img class="gallery-wrapper__img" src="images/towers-desktop.jpg" srcset="images/towers-desktop@2x.jpg 2x" alt="Стеклянные башни в современном стиле">
             </picture>
             <figcaption class="gallery-wrapper__description">Стеклянные башни в&nbsp;современном стиле</figcaption>
           </figure>
           <figure class="gallery-wrapper__item">
             <picture class="gallery-wrapper__pictures">
-              <img class="gallery-wrapper__img gallery-wrapper__img--reverse" src="images/empire-desktop.jpg" srcset="images/empire-desktop@2x.jpg 2x" alt="Дом в стиле сталинский ампир с видами на набережную">
+              <source media="(max-width: 1024px)" srcset="images/modern-facade-tablet.jpg 1x, images/modern-facade-tablet@2x.jpg 2x">
+              <img class="gallery-wrapper__img gallery-wrapper__img--reverse" src="images/modern-facade-desktop.jpg" srcset="images/modern-facade-desktop@2x.jpg 2x" alt="Дом в стиле сталинский ампир с видами на набережную">
             </picture>
             <figcaption class="gallery-wrapper__description">Величественный дом в&nbsp;стиле сталинский ампир с&nbsp;видами на&nbsp;набережную</figcaption>
           </figure>
           <figure class="gallery-wrapper__item">
             <picture class="gallery-wrapper__pictures">
+              <source media="(max-width: 1024px)" srcset="images/avantgarde-tablet.jpg 1x, images/avantgarde-tablet@2x.jpg 2x">
               <img class="gallery-wrapper__img" src="images/avantgarde-desktop.jpg" srcset="images/avantgarde-desktop@2x.jpg 2x" alt="Дом в стиле авангарда вокруг центрального парка">
             </picture>
             <figcaption class="gallery-wrapper__description">Дома в&nbsp;стиле авангард вокруг центрального парка</figcaption>
@@ -202,7 +217,7 @@
         <div class="floorplans__wrapper">
           <div class="floorplans__description">
             <h2 class="floorplans__title section-title">Роскошные квартиры, виллы и&nbsp;пентхаусы</h2>
-            <p class="floorplans__text">Редкие форматы: квартиры с&nbsp;потолками 7&nbsp;метров и&nbsp;антресолями, флетхаусы и&nbsp;двухэтажные ситихаусы, пентхаусы с&nbsp;бассейном, виллы с&nbsp;частным патио.</p>
+            <p class="floorplans__text">Редкие форматы: квартиры с&nbsp;потолками 7&nbsp;метров и антресолями, флетхаусы и&nbsp;двухэтажные ситихаусы, пентхаусы с&nbsp;бассейном, виллы с&nbsp;частным патио.</p>
             <button class="btn floorplans__btn" type="button">Оставить заявку</button>
           </div>
           <div class="gallery-wrapper gallery-wrapper--floorplans">
@@ -213,13 +228,15 @@
               </div>
             </div>
             <picture class="gallery-wrapper__pictures">
+              <source media="(max-width: 1024px)" srcset="images/living-room-design-tablet.jpg 1x, images/living-room-design-tablet@2x.jpg 2x">
               <img class="gallery-wrapper__img" src="images/living-room-design-desktop.jpg" srcset="images/living-room-design-desktop@2x.jpg" width="400" height="700" alt="Интерьер гостиной с зелёным диваном и дизайнерской люстрой">
             </picture>
           </div>
         </div>
       </div>
       <picture>
-        <img class="floorplans__panorama panorama" src="images/lobby-interior-sminex.jpg" srcset="images/lobby-interior-sminex@2x.jpg 2x" width="1728" height="500" alt="Вечерний вид на Фрунзенскую набережную и теплоход">
+        <source media="(max-width: 1024px)" srcset="images/lobby-interior-sminex-tablet.jpg 1x, images/lobby-interior-sminex-tablet@2x.jpg 2x">
+        <img class="floorplans__panorama panorama" src="images/lobby-interior-sminex-desktop.jpg" srcset="images/lobby-interior-sminex-desktop@2x.jpg 2x" width="1728" height="500" alt="Вечерний вид на Фрунзенскую набережную и теплоход">
       </picture>
     </section>
   </main>

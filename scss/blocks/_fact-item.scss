@@ -1,16 +1,32 @@
 .fact-item {
-  // padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  position: relative;
+
+  @include vp-1023 {
+    width: 150px;
+    gap: 0;
+
+    &:nth-child(2n) {
+      margin: auto 0 0;
+    }
+  }
 
   &__wrapper {
     display: flex;
     align-items: baseline;
     justify-content: center;
     gap: 12px;
+    margin: 0 0 10px;
     font-family: $ff-tenor;
+    font-weight: 400;
+
+    @include vp-1023 {
+      width: 100%;
+      gap: 5px;
+      margin: 0 0 10px;
+    }
   }
 
   &__value {
@@ -19,10 +35,20 @@
     color: $color-fallow;
     text-transform: uppercase;
 
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
     &--big {
       font-size: 140px;
       line-height: 100px;
       letter-spacing: -0.04em;
+
+      @include vp-1023 {
+        font-size: 90px;
+        line-height: 70px;
+      }
     }
   }
 
@@ -33,18 +59,53 @@
     color: $color-fallow;
     text-transform: uppercase;
 
+    &--center {
+      margin: auto 0;
+    }
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
     &--big {
       font-size: 34px;
       line-height: 44px;
+
+      @include vp-1023 {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.08em;
+      }
     }
   }
 
   &__text {
+    display: block;
+    margin: 0 auto;
     max-width: 192px;
     font-family: $ff-roboto;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @include vp-1023 {
+      display: flex;
+      margin: 0 auto 20px;
+    }
+
+    &-playground {
+      margin: 20px auto 0;
+    }
   }
 
   &__title {
@@ -57,12 +118,21 @@
     text-transform: uppercase;
     text-align: center;
     color: $color-fallow;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__group {
     display: grid;
     grid-template-columns: 1fr 368px 1fr;
     width: 100%;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr 207px 1fr;
+    }
   }
 
   &__arrow-left,
@@ -72,27 +142,28 @@
   }
 
   &__arrow-left::after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 8px);
-    bottom: 53%;
     right: 0;
-    border-bottom: 1px solid $color-fallow;
   }
 
+  &__arrow-left::after,
   &__arrow-right::before {
     content: "";
     position: absolute;
     width: calc(100% - 8px);
-    bottom: 53%;
+    bottom: 60%;
     border-bottom: 1px solid $color-fallow;
   }
 
   &__icon-arrow-left,
   &__icon-arrow-right {
     position: absolute;
-    bottom: 53%;
+    bottom: 60%;
     transform: translateY(50%);
+
+    @include vp-1023 {
+      width: 12px;
+      height: 12px;
+    }
   }
 
   &__icon-arrow-right {
@@ -100,11 +171,27 @@
   }
 
   &--gap-xl {
-    gap: 22px;
+    width: unset;
+
+    @include vp-1023 {
+      gap: 0;
+    }
+
+    .fact-item__wrapper {
+      margin: 0 0 22px;
+
+      @include vp-1023 {
+        margin: 0 0 20px;
+      }
+    }
   }
 
   &--floorplans {
     margin: auto 0;
     gap: 40px;
+
+    @include vp-1023 {
+      gap: 20px;
+    }
   }
 }
