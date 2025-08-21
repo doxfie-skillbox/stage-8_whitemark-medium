@@ -473,6 +473,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0 70px 0 0;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .header__menu {
@@ -1698,6 +1699,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-family: "Tenor Sans", "Arial", sans-serif;
+  row-gap: 30px;
 }
 .gallery-wrapper__item {
   margin: 0;
@@ -2085,6 +2087,7 @@ a {
   background-color: unset;
   border: 1px solid #C49A6C;
   border-radius: 0 40px 0 40px;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .btn {
@@ -2099,4 +2102,8 @@ a {
     font-size: 14px;
     line-height: 20px;
   }
+}
+.btn:hover, .btn:focus-visible {
+  color: #390417;
+  background-color: #c49a6c;
 }/*# sourceMappingURL=style.css.map */

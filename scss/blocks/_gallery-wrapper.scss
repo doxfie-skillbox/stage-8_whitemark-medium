@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-family: $ff-tenor;
+  row-gap: 30px;
 
   &__item {
     margin: 0;
