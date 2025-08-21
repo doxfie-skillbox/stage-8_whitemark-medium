@@ -15,6 +15,23 @@
     align-items: center;
     gap: 85px;
 
+    @media (max-width: 1575px) {
+      gap: 70px;
+    }
+
+    @media (max-width: 1545px) {
+      gap: 55px;
+    }
+
+    @media (max-width: 1440px) {
+      grid-template-columns: 1fr 2fr;
+      gap: 50px;
+    }
+
+    @media (max-width: 1200px) {
+      gap: 45px;
+    }
+
     @include vp-1023 {
       grid-template-columns: 1fr;
       gap: 40px;
@@ -51,6 +68,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     @include vp-1023 {
       font-size: 14px;

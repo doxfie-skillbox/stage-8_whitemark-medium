@@ -16,8 +16,20 @@
     gap: 173px;
     margin: 0 0 120px;
 
+    @media (max-width: 1650px) {
+      column-gap: 120px;
+    }
+
+    @media (max-width: 1550px) {
+      column-gap: 80px;
+    }
+
+    @media (max-width: 1440px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 60px;
+    }
+
     @include vp-1023 {
-      grid-template-columns: 340px 1fr;
       gap: 48px;
       margin: 0 0 80px;
     }
@@ -27,6 +39,10 @@
       gap: 40px;
       margin: 0 0 60px;
     }
+  }
+
+  &__img {
+    width: 100%;
   }
 
   &__title {
@@ -52,6 +68,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
 
       @include vp-1023 {
         font-size: 14px;

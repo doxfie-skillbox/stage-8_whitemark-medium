@@ -3,6 +3,26 @@
   margin: 0 auto;
   padding: 0 180px;
 
+  @media (max-width: 1722px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 1662px) {
+    padding: 0 120px;
+  }
+
+  @media (max-width: 1510px) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: 1470px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1250px) {
+    padding: 0 60px;
+  }
+
   @include vp-1023 {
     padding: 0 20px;
   }
